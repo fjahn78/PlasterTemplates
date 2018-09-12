@@ -1,10 +1,10 @@
 @{
     RootModule        = 'PlasterTemplates'
-    ModuleVersion     = '0.0.1'
-    GUID              = '66a75c73-a800-473b-9bff-5942a3363a36'
-    Author            = 'David Christian'
-    CompanyName       = 'OverPoweredShell.com'
-    Description       =  'Collection of Plaster Templates Created by David Christian'
+    ModuleVersion     = '0.0.2'
+    GUID              = '04d1a19c-0c4d-463e-b743-be71120e0f8e'
+    Author            = 'Frank Schumann'
+    CompanyName       = 'prosozial GmbH'
+    Description       =  'Collection of Plaster Templates inspired by David Christian'
     PrivateData       = @{
         PSData = @{
             Extensions = @{

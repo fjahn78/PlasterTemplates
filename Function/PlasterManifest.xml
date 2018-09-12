@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<plasterManifest 
+<plasterManifest
   xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1" schemaVersion="1.0">
   <metadata>
     <name>FunctionTemplate</name>
     <id>c0b57946d-f52f-4168-b152-4fdb334b9fca</id>
-    <version>0.0.1</version>
-    <title>DC Custom Function Template</title>
+    <version>1.0.0</version>
+    <title>My Function Template</title>
     <description>Plaster template to create an advanced function with tests.</description>
-    <author>David Christian</author>
+    <author>Frank Schumann</author>
     <tags />
   </metadata>
   <parameters>

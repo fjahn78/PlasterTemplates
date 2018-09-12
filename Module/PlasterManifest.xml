@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<plasterManifest 
+<plasterManifest
         xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1" schemaVersion="1.0">
         <metadata>
                 <name>ModuleTemplate</name>
                 <id>f7717d26-d77f-4358-8480-5928f7766bff</id>
                 <version>1.0.0</version>
-                <title>DC Custom Module Template</title>
+                <title>My Module Template</title>
                 <description>Plaster template to create a module</description>
-                <author>David Christian</author>
+                <author>Frank Schumann</author>
                 <tags></tags>
         </metadata>
         <parameters>
@@ -17,7 +17,7 @@
                 <parameter name='ModuleDesc' type = 'text' prompt='Brief Description of your module' />
                 <parameter name='FunctionFolders' type = 'multichoice' prompt='Please select folders to include' default='0,1,2'>
                         <choice label='&amp;Public' value='Public' help='Adds a public folder to module root'/>
-                        <choice label='&amp;Internal' value='Internal' help='Adds a internal folder to module root'/>
+                        <choice label='Pr&amp;ivate' value='Private' help='Adds a internal folder to module root'/>
                         <choice label='&amp;Classes' value='Classes' help='Adds a classes folder to module root'/>
                         <choice label='&amp;Binaries' value='Binaries' help='Adds a binaries folder to module root'/>
                         <choice label='&amp;DSCResources' value='DSCResources' help='Adds a DSCResource folder to module root'/>
@@ -49,7 +49,7 @@
                 <templateFile source='template.psm1' destination='${PLASTER_PARAM_ModuleName}\${PLASTER_PARAM_ModuleName}.psm1'/>
                 <message>Creating you folders for module: </message>
                 <file source='' destination='${PLASTER_PARAM_ModuleName}\Public\' condition='$PLASTER_PARAM_FunctionFolders -contains "Public"'/>
-                <file source='' destination='${PLASTER_PARAM_ModuleName}\Internal\' condition='$PLASTER_PARAM_FunctionFolders -contains "Internal"'/>
+                <file source='' destination='${PLASTER_PARAM_ModuleName}\Private\' condition='$PLASTER_PARAM_FunctionFolders -contains "Private"'/>
                 <file source='' destination='${PLASTER_PARAM_ModuleName}\Classes\' condition='$PLASTER_PARAM_FunctionFolders -contains "Classes"'/>
                 <file source='' destination='${PLASTER_PARAM_ModuleName}\Binaries\' condition='$PLASTER_PARAM_FunctionFolders -contains "Binaries"'/>
                 <file source='' destination='${PLASTER_PARAM_ModuleName}\DSCResources\' condition='$PLASTER_PARAM_FunctionFolders -contains "DSCResources"'/>
